@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Baufra;
+  src: url(../fonts/Baufra-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Baufra;
+  src: url(../fonts/Baufra-DemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Heimat;
+  src: url(../fonts/Heimat-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Heimat;
+  src: url(../fonts/Heimat-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Aquawax;
+  src: url(../fonts/aquawax-Demibold.ttf);
+  font-weight: 600;
+}
+:root {
+  --azul: #3c53d7;
+  --rosa: #c405d7;
+  --verde: #84e4a4;
+  --branco: #ffffff;
+  --cinza: #5f5f5f;
+  --cinza-escuro: #2d2d2d;
+  --cinza-claro: #edefec;
+  --sombra: drop-shadow(0px 1px 3px var(--cinza));
+}
+body {
+  height: 200vh;
+  margin: 0px;
+  background: var(--cinza-claro);
+}
+.menu-lateral {
+  position: fixed;
+  width: 150px;
+  height: 100vh;
+  background: var(--azul);
+}
+section {
+  padding-left: 150px;
+  min-height: 100vh;
+}
+.container-fluid {
+  background-color: var(--rosa);
+}
