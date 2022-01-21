@@ -33,6 +33,9 @@
   --cinza-claro: #edefec;
   --sombra: drop-shadow(0px 1px 3px var(--cinza));
 }
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
 body {
   height: 200vh;
   margin: 0px;
@@ -46,8 +49,11 @@ body {
 }
 section {
   padding-left: 150px;
-  min-height: 100vh;
 }
-.container-fluid {
-  background-color: var(--rosa);
+.topo {
+  animation: teste 5s ease-in-out infinite;
+  min-height: 100vh;
+  background: linear-gradient(225deg, var(--azul), var(--verde));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
