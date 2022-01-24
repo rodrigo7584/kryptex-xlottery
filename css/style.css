@@ -36,6 +36,15 @@
 img {
   image-rendering: -webkit-optimize-contrast;
 }
+h1 {
+  font-family: 'Heimat';
+  color: var(--rosa);
+  text-align: center;
+}
+p {
+  font-family: 'Baufra';
+  color: var(--cinza);
+}
 body {
   overflow-x: hidden;
   height: 200vh;
@@ -43,6 +52,11 @@ body {
 }
 section {
   padding-left: 100px;
+}
+.ilustracao-pagina {
+  max-width: 100%;
+  padding: 25px;
+  max-height: 100%;
 }
 .bg-branco {
   background: var(--branco);
@@ -55,7 +69,8 @@ section {
   min-height: 100vh;
 }
 .icone-pagina {
-  width: 150px;
+  margin: 25px 0px;
+  width: 130px;
 }
 /*Menu*/
 .menu-lateral {
