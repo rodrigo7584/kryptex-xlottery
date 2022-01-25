@@ -44,6 +44,7 @@ h1 {
 p {
   font-family: 'Baufra';
   color: var(--cinza);
+  font-size: 14px;
 }
 body {
   overflow-x: hidden;
@@ -55,7 +56,7 @@ section {
 }
 .ilustracao-pagina {
   max-width: 100%;
-  padding: 25px;
+  padding: 0px 100px;
   max-height: 100%;
 }
 .bg-branco {
@@ -64,13 +65,30 @@ section {
 .bg-cinza {
   background: var(--cinza-claro);
 }
+.tela-full {
+  min-height: 100vh;
+  height: auto;
+}
 .altura-full {
   height: 100%;
-  min-height: 100vh;
+}
+.padding-geral {
+  padding: 50px 0px;
 }
 .icone-pagina {
   margin: 25px 0px;
   width: 130px;
+}
+.box-degrade {
+  background: linear-gradient(to right, var(--verde), var(--azul));
+  border-radius: 20px;
+  padding: 3px;
+}
+.box-branca {
+  background: var(--branco);
+  padding: 25px;
+  height: 100%;
+  border-radius: 18px;
 }
 /*Menu*/
 .menu-lateral {
@@ -101,6 +119,7 @@ section {
   padding: 5px;
   max-width: 100%;
 }
+/*TOPO*/
 section.topo {
   animation: teste 5s ease-in-out infinite;
   position: relative;
@@ -121,6 +140,10 @@ section.topo .box-topo .ilustracao-topo img {
 section.topo .box-topo .logo img {
   height: 70px;
 }
+section.topo .box-topo p {
+  color: var(--branco);
+  font-size: 20px;
+}
 section.topo .flecha {
   position: absolute;
   bottom: 20px;
@@ -137,6 +160,26 @@ section.topo .menu-social {
 }
 section.topo .menu-social .icone-menu-social {
   width: 35px;
+}
+/*PAGINA 1*/
+section.pagina-1 .logo {
+  height: 40px;
+}
+/*PAGINA 3*/
+section.pagina-3 .box-premiacoes {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  column-gap: 2%;
+}
+section.pagina-3 .box-premiacoes p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+section.pagina-3 .box-premiacoes p.rosa {
+  color: var(--rosa);
+  font-family: 'Heimat';
+  font-size: 32px;
+  line-height: 38px;
 }
 
 @keyframes flecha {
