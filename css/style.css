@@ -224,6 +224,54 @@ section.pagina-8 .logo{
   margin: 50px 0px 20px 0px;
   height: 20px;
 }
+
+
+/*responsividade*/
+@media screen and (max-width: 1399px) {
+}
+@media screen and (max-width: 1199px) {
+.ilustracao-pagina{
+  padding: 0px 75px;
+}
+.icone-pagina {
+
+  width: 110px;
+}
+section.topo .box-topo .logo img {
+  height: 60px;
+}
+section.pagina-3 .box-premiacoes p {
+  font-size: 13px;
+}
+section.pagina-5 .box-exemplos .box-branca .ilustracao-exemplo {
+  height: 190px;
+
+}
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 767px) {
+  
+}
+/*576px ate 767px  em diante sm*/
+@media screen and (max-width: 576px) {
+
+ 
+
+
+}
+/*400px ate 575px  em diante sm*/
+@media screen and (max-width: 400px) {
+
+  
+}
+/*responsividade*/
+
+
+
+
+
 @keyframes flecha {
   0% {
     bottom: 20px;
