@@ -98,10 +98,10 @@ section {
   filter: var(--sombra);
   background-color: var(--azul);
   display: none;
-  justify-content: end;
+  justify-content: flex-end;
   width: 50px;
   top: 15px;
-  left: 60px;
+  left: 45px;
   border-radius: 5px;
   padding: 5px;
 }
@@ -332,29 +332,49 @@ section.pagina-8 .logo {
 }
 /*576px ate 767px  em diante sm*/
 @media screen and (max-width: 576px) {
+  .pagina-1 p,
+  .pagina-1-2 p,
+  .pagina-2 p,
+  .pagina-3 p,
+  .pagina-4 p,
+  .pagina-6 p,
+  .pagina-7 p {
+    text-align: center;
+    padding: 0px 15px;
+  }
   .etiqueta-menu {
     display: flex;
     transition: 0.5s all ease-in-out;
-  }
-  .etiqueta-menu img {
-    animation: esconder 1s ease-in-out infinite;
-  }
-  .etiqueta-menu.esconder {
-    transition: 0.5s all ease-in-out;
     left: -15px;
   }
-  .etiqueta-menu.esconder img {
+  .etiqueta-menu img {
     animation: mostrar 1s ease-in-out infinite;
   }
+  .etiqueta-menu.mostrar {
+    left: 45px;
+    transition: 0.5s all ease-in-out;
+  }
+  .etiqueta-menu.mostrar img {
+    animation: esconder 1s ease-in-out infinite;
+  }
   .menu-lateral {
-    grid-template-rows: calc(100vh - 100px) 50px;
+    grid-template-rows: calc(100vh - 150px) 150px;
+    width: 60px;
+    filter: unset;
+    transition: 0.5s all ease-in-out;
+    left: -60px;
+  }
+  .menu-lateral.mostrar {
     left: 0px;
     transition: 0.5s all ease-in-out;
   }
-  .menu-lateral.esconder {
-    filter: unset;
-    transition: 0.5s all ease-in-out;
-    left: -75px;
+  .menu-lateral .footer-menu {
+    align-items: flex-end;
+    padding-bottom: 50px;
+  }
+
+  .menu-lateral .menu {
+    grid-template-rows: repeat(8, 60px);
   }
   .tela-full {
     min-height: unset;
@@ -385,7 +405,7 @@ section.pagina-8 .logo {
     right: unset;
     display: flex;
     position: relative;
-    justify-content: end;
+    justify-content: flex-end;
   }
   section.topo .menu-social .icone-menu-social {
     width: 30px;
