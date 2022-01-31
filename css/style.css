@@ -131,6 +131,11 @@ section {
   max-height: 100%;
   max-width: 100%;
 }
+.menu-lateral .menu .icone-menu:hover {
+  transform: scale(0.97);
+  filter: blur(0.5px) brightness(0.9);
+}
+
 .menu-lateral .footer-menu {
   display: grid;
   align-items: center;
@@ -141,7 +146,6 @@ section {
 }
 /*TOPO*/
 section.topo {
-  animation: teste 5s ease-in-out infinite;
   position: relative;
   background: linear-gradient(225deg, var(--azul), var(--verde));
   background-size: 100% 100%;
@@ -501,6 +505,14 @@ section.pagina-8 .logo {
   }
 }
 
+[data-aos='rolar'] {
+  transform: scale(0) translateX(-800px) rotate(-540deg);
+  opacity: 0;
+}
+[data-aos='rolar'].aos-animate {
+  transform: scale(1) translateX(0) rotate(0deg);
+  opacity: 1;
+}
 /*
 Viewports
 Desktop
