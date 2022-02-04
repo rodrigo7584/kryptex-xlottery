@@ -275,6 +275,10 @@ section.pagina-5 .box-exemplos .box-branca .ilustracao-exemplo {
   height: 220px;
   padding-bottom: 20px;
 }
+/*Pagina 7*/
+section.pagina-7 h6 {
+  text-align: left;
+}
 /*PAGINA 8*/
 section.pagina-8 p {
   text-align: center;
@@ -284,7 +288,9 @@ section.pagina-8 .logo {
   margin: 50px 0px 50px 0px;
   height: 20px;
 }
-
+footer span.baufra {
+  font-family: Baufra;
+}
 /*responsividade*/
 @media screen and (max-width: 1399px) {
 }
