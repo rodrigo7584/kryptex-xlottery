@@ -60,7 +60,7 @@ footer p.submenu {
   margin-bottom: 0.75rem;
 }
 footer .logo-footer {
-  margin: 10px 0px 25px 0px;
+  margin: 0px 0px 25px 0px;
   width: 85px;
 }
 footer .social-footer {
@@ -387,6 +387,7 @@ footer span.baufra {
   }
   footer .social-footer {
     display: flex;
+    margin-bottom: 20px;
     justify-content: center;
     width: 100%;
   }
