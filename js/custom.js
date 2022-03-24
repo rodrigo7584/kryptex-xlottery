@@ -16,14 +16,12 @@ window.onscroll = function () {
   ) {
     esconderMenuScroll()
     verificador = false
-    // console.log(verificador)
   } else if (
     document.documentElement.scrollTop <= 563 &&
     widthTela <= 576 &&
     verificador === false
   ) {
     verificador = true
-    // console.log(verificador)
   }
 }
 function esconderMenuScroll() {
