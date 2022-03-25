@@ -70,6 +70,44 @@ footer .social-footer a img {
   width: 24px;
   height: 24px;
 }
+.idioma {
+  position: absolute;
+  z-index: 5;
+  right: 10px;
+  top: 10px;
+  display: grid;
+  justify-items: flex-end;
+}
+.idioma img {
+  height: 40px;
+  cursor: pointer;
+
+  margin-bottom: 10px;
+}
+.idioma ul {
+  border-radius: 5px;
+  background: #fff;
+  padding: 5px 0px;
+  list-style: none;
+}
+.idioma ul li {
+  padding: 5px 15px;
+  text-align: right;
+}
+.idioma ul a {
+  color: var(--cinza);
+  font-family: Baufra;
+  text-decoration: none;
+}
+.idioma ul a:hover {
+  color: var(--rosa);
+}
+.idioma .idiomas {
+  display: none;
+}
+.idioma .idiomas.ativo {
+  display: block;
+}
 img {
   image-rendering: -webkit-optimize-contrast;
 }
@@ -399,6 +437,9 @@ footer span.baufra {
 }
 /*576px ate 767px  em diante sm*/
 @media screen and (max-width: 576px) {
+  .idioma img {
+    height: 30px;
+  }
   .pagina-1 p,
   .pagina-1-2 p,
   .pagina-2 p,

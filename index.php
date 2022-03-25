@@ -1,3 +1,6 @@
+<?php
+include "config.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -25,6 +28,14 @@
     <title>Kryptex | Xlottery</title>
   </head>
   <body> 
+      <div class="idioma">
+        <img class="globo" src="./img/globo.svg" alt="">
+        <ul class="idiomas">
+          <li><a href="index.php?lang=pt">Português</a></li>
+          <li><a href="index.php?lang=en">English</a></li>
+          <li><a href="index.php?lang=es">Español</a></li>
+        </ul>
+      </div>
       <div id='etiqueta-menu' class="etiqueta-menu">
         <img src="./img/icone-seta-topo.svg" alt="">
       </div>
@@ -78,10 +89,7 @@
               <div class="ilustracao-topo">
                 <img data-aos="zoom-in" data-aos-delay="200" src="./img/topo-ilustracao.png" alt="" />
               </div>
-              <p>
-                XLOTTERY é a loteria da Plataforma KRYPTEX, <br />
-                a única loteria digital que paga seus prêmios em Dólar(USDT).
-              </p>
+              <p><?php echo $kryptex_xlottery['topo_p']?></p>
             </div>
           </div>
         </div>
@@ -147,16 +155,7 @@
             />
           </div>
           <div class="col-md-6 order-md-2 order-1 d-flex justify-content-center align-items-center">
-            <p>
-              A XLOTTERY é uma loteria feita para os investidores KRYPTEX, que
-              investem seu dinheiro apostando no projeto, compartilhando e
-              estimulando o crescimento da comunidade e que também contribuem
-              para o desenvolvimento do ecossistema KRYPTEX. A XLOTTERY está
-              sendo criada visando a distribuição dos lucros de captação da
-              Plataforma KRYPTEX, um incentivo a todos aqueles que possuírem e
-              utilizarem os produtos e serviços da plataforma. Veja como é fácil
-              participar da loteria XLOTTERY logo abaixo.
-            </p>
+            <p><?php echo $kryptex_xlottery['pagina1_p1']?></p>
           </div>
         </div>
       </div>
@@ -166,22 +165,9 @@
         <div class="row padding-geral">
           <div class="col-md-6 d-flex justify-content-center align-items-center">
             <div class="box">
-              <p>
-              As apostas serão válidas apenas para os investidores do KRYPTEX
-              Token e Moeda Digital KRYPTEX, aumentando as chances de ganhos e
-              também impulsionando a venda de tokens para um público cada vez
-              maior e os sorteios não serão cumulativos, todos os finais de
-              semana de sorteios sairá um ganhador, ou os ganhadores.
-            </p>
-            <p>Ao apostar na XLOTTERY, além de você ter a chance de ganhar
-              Dólar(USDT) como prêmio, você não perderá seu investimento em
-              KRYPTEX, que continuará rendendo em sua carteira. Esse foi o melhor
-              cenário que conseguimos idealizar para uma distribuição justa e eficaz de
-              lucros de participação, além da própria valorização do Kryptex Token e
-              posteriormente da Moeda Digital Kryptex, quando lançarmos ao
-              mercado.</p>
+              <p><?php echo $kryptex_xlottery['pagina1_p2']?></p>
+              <p><?php echo $kryptex_xlottery['pagina1_p3']?></p>
             </div>
-            
           </div>
           <div class="col-md-6 d-flex justify-content-center align-items-center">
             <img
@@ -202,10 +188,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h1>
-              COMO FUNCIONARÁ <br />
-              A XLOTTERY
-            </h1>
+            <h1><?php echo $kryptex_xlottery['pagina2_titulo']?></h1>
           </div>
         </div>
         <div class="row padding-geral">
@@ -217,15 +200,7 @@
             />
           </div>
           <div class="col-md-6 d-flex order-md-2 order-1 justify-content-center align-items-center">
-            <p>
-              Ao comprar um cupom, você escolherá um conjunto de seis números da
-              sorte em uma cartela contendo um total de 60 números e deverá
-              cadastrar o endereço de sua carteira que contém o saldo em KRYPTEX
-              Token para no caso de ser premiado, fazermos a verificação via
-              BSCScan confirmando a quantidade de tokens exigidos no
-              regulamento. Os sorteios serão transmitidos ao vivo em nosso canal
-              do YouTube e também em nossas redes sociais.
-            </p>
+            <p><?php echo $kryptex_xlottery['pagina2_p1']?></p>
           </div>
         </div>
       </div>
@@ -239,7 +214,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h1>PREMIAÇÃO CRESCENTE</h1>
+            <h1><?php echo $kryptex_xlottery['pagina3_titulo']?></h1>
           </div>
         </div>
         <div class="row padding-geral">
@@ -247,34 +222,23 @@
             <div class="box-premiacoes">
               <div data-aos="zoom-in-right"data-aos-delay="100" class="box-degrade">
                 <div class="box-branca">
-                  <p>
-                    A XLottery será inaugurada quando o KRYPTEX Token atingir
-                  </p>
-                  <p class="rosa">
-                    600 MILHÕES <br />
-                    DE DÓLARES
-                  </p>
-                  <p>de capitalização de mercado,</p>
+                  <p><?php echo $kryptex_xlottery['pagina3_box1_p1']?></p>
+                  <p class="rosa"><?php echo $kryptex_xlottery['pagina3_box1_p2']?></p>
+                  <p><?php echo $kryptex_xlottery['pagina3_box1_p3']?></p>
                 </div>
               </div>
               <div data-aos="zoom-in-right" data-aos-delay="200" class="box-degrade">
                 <div class="box-branca">
-                  <p>estimando premiação total de</p>
-                  <p class="rosa">
-                    30 MILHÕES <br />
-                    DE DÓLARES
-                  </p>
-                  <p>no mês de inauguração,</p>
+                  <p><?php echo $kryptex_xlottery['pagina3_box2_p1']?></p>
+                  <p class="rosa"><?php echo $kryptex_xlottery['pagina3_box2_p2']?></p>
+                  <p><?php echo $kryptex_xlottery['pagina3_box2_p3']?></p>
                 </div>
               </div>
               <div data-aos="zoom-in-right" data-aos-delay="300" class="box-degrade">
                 <div class="box-branca">
-                  <p>serão</p>
-                  <p class="rosa">
-                    1 MILHÃO <br />
-                    DE DÓLARES
-                  </p>
-                  <p>em sorteios diários durante 30 dias corridos.</p>
+                  <p><?php echo $kryptex_xlottery['pagina3_box3_p1']?></p>
+                  <p class="rosa"><?php echo $kryptex_xlottery['pagina3_box3_p2']?></p>
+                  <p><?php echo $kryptex_xlottery['pagina3_box3_p3']?></p>
                 </div>
               </div>
             </div>
@@ -282,16 +246,7 @@
         </div>
         <div class="row padding-geral">
           <div class="col-md-7 d-flex justify-content-center align-items-center">
-            <p>
-              Inicialmente teremos essa premiação de inauguração, sendo
-              divulgado o calendário dos próximos sorteios na página da Xlottery
-              e gradativamente serão sorteados os valores dos prêmios conforme a
-              captação de recursos na venda da loteria e nas alavancagens que
-              faremos com o KRYPTEX Token e também quando for lançada a Moeda
-              Digital KRYPTEX. Um atrativo a mais, como forma de incentivo a
-              manter seus tokens KRYPTEX e ainda ter a chance de ganhar uma
-              bolada.
-            </p>
+            <p><?php echo $kryptex_xlottery['pagina3_p1']?></p>
           </div>
           <div class="col-md-5">
             <img
@@ -312,9 +267,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h1>
-              VEJA COMO É FÁCIL <br />
-              PARTICIPAR DOS SORTEIOS
+            <h1><?php echo $kryptex_xlottery['pagina4_titulo']?>
             </h1>
           </div>
         </div>
@@ -327,18 +280,7 @@
             />
           </div>
           <div class="col-md-6 order-md-2 order-1 d-flex justify-content-center align-items-center">
-            <p>
-              Para participar dos sorteios, basta comprar 50 dólares em KRYPTEX
-              Token e segurar em sua carteira, cadastrar o endereço de sua
-              carteira que contém o saldo em KRYPTEX Token, escolher 6 números
-              da sorte em um total de 60 números na cartela e acompanhar os
-              sorteios pelo nosso canal no YouTube. Para quem recebeu o airdrop
-              contendo um lote de 2 Kryptex Token, poderá trocar por uma cartela
-              no dia da inauguração da Xlottery e escolher seis números da
-              sorte, embora precisará estar dentro do regulamento contendo 50
-              dólares de saldo em KRYPTEX Token na sua carteira se tornando
-              elegível para receber a premiação.
-            </p>
+            <p><?php echo $kryptex_xlottery['pagina4_p1']?></p>
           </div>
         </div>
       </div>
@@ -352,10 +294,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h1>
-              EXEMPLO DE COMO <br />
-              FUNCIONARÃO AS VERIFICAÇÕES
-            </h1>
+            <h1><?php echo $kryptex_xlottery['pagina5_titulo']?></h1>
           </div>
         </div>
         <div class="row padding-geral">
@@ -367,12 +306,7 @@
                     <h3>1</h3>
                   </div>  
                     <img class="ilustracao-exemplo" src="./img/pagina5-ilustracao1.png" alt="" />
-                    <p>
-                      No mês de inauguração da XLOTTERY serão sorteados 30 milhões
-                      de dólares em 30 dias corridos, 1 milhão de dólares todos os
-                      dias, para comemorarmos a chegada do token aos 600 milhões
-                      de capitalização de mercado.
-                    </p>                  
+                    <p><?php echo $kryptex_xlottery['pagina5_p1']?></p>                  
                 </div>
               </div>
               <div data-aos="flip-right" class="box-degrade">
@@ -380,14 +314,7 @@
                   <div class="numero-item">
                     <h3>2</h3></div>
                     <img class="ilustracao-exemplo" src="./img/pagina5-ilustracao2.png" alt="" />
-                    <p>
-                      Em todos os sorteios se o ganhador não possuir a quantidade
-                      mínima de 50 dólares em KRYPTEX Token em sua carteira no
-                      momento da verificação pelo BSCScan https://bscscan.com/,
-                      continuaremos o sorteio até encontrarmos uma carteira
-                      compatível com as exigências do regulamento para a entrega
-                      da premiação.
-                    </p>                  
+                    <p><?php echo $kryptex_xlottery['pagina5_p2']?></p>                  
                 </div>
               </div>
               <div data-aos="flip-right" class="box-degrade">
@@ -395,12 +322,7 @@
                   <div class="numero-item">
                     <h3>3</h3></div>
                     <img class="ilustracao-exemplo" src="./img/pagina5-ilustracao3.png" alt="" />
-                    <p>
-                      No momento que o apostador adquire sua cartela e escolhe
-                      seus números da sorte, ele deverá cadastrar sua carteira
-                      onde estarão seus Tokens KRYPTEX
-                    </p>
-                  
+                    <p><?php echo $kryptex_xlottery['pagina5_p3']?></p>
                 </div>
               </div>
               <div data-aos="flip-right" class="box-degrade">
@@ -408,13 +330,7 @@
                   <div class="numero-item">
                     <h3>4</h3></div>
                     <img class="ilustracao-exemplo" src="./img/pagina5-ilustracao4.png" alt="" />
-                    <p>
-                      Ao ganhar no sorteio utilizaremos o endereço de sua carteira
-                      cadastrada para verificação no site https://bscscan.com/
-                      onde conseguiremos visualizar se de fato o contemplado tem o
-                      saldo de 50 dólares em KRYPTEX Token e estará elegível para
-                      receber o prêmio de 1 milhão de dólares.
-                    </p>                  
+                    <p><?php echo $kryptex_xlottery['pagina5_p4']?></p>                  
                 </div>
               </div>
             </div>
@@ -431,10 +347,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h1>
-              AQUI SEU INVESTIMENTO <br />
-              É GARANTIDO
-            </h1>
+            <h1><?php echo $kryptex_xlottery['pagina6_titulo']?></h1>
           </div>
         </div>
         <div class="row  padding-geral">
@@ -442,11 +355,7 @@
             <img class="ilustracao-pagina" src="./img/pagina6-ilustracao.png" alt="" />
           </div>
           <div class="col-md-6 order-md-2 order-1 d-flex justify-content-center align-items-center">
-            <p>
-              Diferente de outras loterias, o apostador não perde seu dinheiro,
-              pois o KRYPTEX Token continuará em sua carteira e poderá pegar
-              subidas recuperando o dinheiro pago nas apostas da Xlottery.
-            </p>
+            <p><?php echo $kryptex_xlottery['pagina6_p1']?></p>
           </div>
         </div>
       </div>
@@ -460,10 +369,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h1>
-              MAIORES CHANCES <br />
-              DE GANHAR
-            </h1>
+            <h1><?php echo $kryptex_xlottery['pagina7_titulo']?></h1>
           </div>
         </div>
         <div class="row padding-geral">
@@ -475,14 +381,8 @@
             />
           </div>
           <div class="col-md-6 order-md-2 order-1 d-flex flex-wrap justify-content-center align-items-center">
-            <p >
-              As chances de ser premiado na XLOTTERY são maiores porque somente
-              quem possuir o KRYPTEX Token e estiver dentro das exigências do
-              regulamento poderá receber o prêmio. Quanto mais cupons você
-              comprar, maiores serão suas chances de ganhar. Aposte com
-              responsabilidade.
-            </p>
-            <p>A entrega da premiação será feita logo após o processo de verificação e validação da carteira, estando em conformidade com o regulamento, será enviada via transferência de tokens lastreados em Dólar, utilizaremos o Tether (USDT) e também o Binance USD (BUSD) e enviaremos para a carteira cadastrada na aquisição do bilhete. Importante informar que todas as transações destinadas a pagamento de prêmios, utilizaremos o HASH da transação para serem consultados e conferidos no blockchain da rede da Binance e serão compartilhadas em nossas redes sociais.</p>
+            <p ><?php echo $kryptex_xlottery['pagina7_p1']?></p>
+            <p><?php echo $kryptex_xlottery['pagina7_p2']?></p>
           </div>
         </div>
       </div>
@@ -496,34 +396,15 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h1>REGULAMENTO</h1>
+            <h1><?php echo $kryptex_xlottery['pagina8_titulo']?></h1>
           </div>
         </div>
         <div class="row padding-geral">
           <div class="col-12">
-            <p>
-              Para estar elegível, o apostador deverá comprar e manter 50
-              dólares em saldo de KRYPTEX Token. A Premiação somente será
-              validada após a verificação da carteira no BSCScan, contendo os
-              saldos em KRYPTEX Token no total mínimo de 50 dólares para os
-              prêmios de 1 milhão de dólares
-            </p>
-            <p>
-              Se o apostador não possuir 50 dólares de saldo em KRYPTEX Token, o
-              prêmio não será entregue e o sorteio continuará até ser encontrada
-              uma carteira compatível com 50 dólares de Saldo em KRYPTEX Token.
-            </p>
-            <p>
-              Os Prêmios serão pagos em tokens lastreados em dólar, poderão ser pagos em Tether(USDT) ou Binance USD(BUSD), via transferência para carteira do ganhador. A transação HASH será compartilhada e estará disponível em nossas redes sociais para a consulta via Blockchain na rede da Binance.
-            </p>
-            <p>
-              A Xlottery é a loteria dos investidores da plataforma KRYPTEX, por
-              isso, se não possuir KRYPTEX Token com saldo mínimo de 50 dólares
-              em carteira, pedimos que não faça aposta, pois não estará elegível
-              a receber prêmios após a verificação no BSCScan
-              https://bscscan.com/ no caso de contemplado e o dinheiro utilizado
-              na compra da cartela não será reembolsável.
-            </p>
+            <p><?php echo $kryptex_xlottery['pagina8_p1']?></p>
+            <p><?php echo $kryptex_xlottery['pagina8_p2']?></p>
+            <p><?php echo $kryptex_xlottery['pagina8_p3']?></p>
+            <p><?php echo $kryptex_xlottery['pagina8_p4']?></p>
           </div>
           </div>
           <div class="row">

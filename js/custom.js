@@ -1,3 +1,8 @@
+const globo = document.querySelector('.globo')
+const idiomas = document.querySelector('.idiomas')
+globo.addEventListener('click', function () {
+  idiomas.classList.toggle('ativo')
+})
 var etiqueta = document.getElementById('etiqueta-menu'),
   menuLateral = document.getElementById('menu-lateral'),
   widthTela = window.screen.width
