@@ -125,7 +125,7 @@ include "config.php";
               src="./img/social-facebook.svg"
               alt="icone menu social"
           /></a>
-          <a href="https://t.me/DigitalKryptex" target="_blank"
+          <a href="https://t.me/+JjT4IiattDowODFl" target="_blank"
             ><img data-aos="fade-down" data-aos-delay="250" 
               class="icone-menu-social"
               src="./img/social-telegram.svg"
@@ -427,7 +427,7 @@ include "config.php";
                 <a target="_blank" href="https://www.youtube.com/channel/UC_-8nxsDd1Pdel6RzMLBzYw"><img src="./img/social-footer-youtube-v2.svg" alt=""></a>
                 <a target="_blank" href="https://www.instagram.com/DigitalKryptex/"><img src="./img/social-footer-instagram-v2.svg" alt=""></a>
                 <a target="_blank" href="https://www.facebook.com/Kryptex-Digital-Currency-109083208238909"><img src="./img/social-footer-facebook-v2.svg" alt=""></a>
-                <a target="_blank" href="https://t.me/DigitalKryptex"><img src="./img/social-footer-telegram-v2.svg" alt=""></a>                
+                <a target="_blank" href="https://t.me/+JjT4IiattDowODFl"><img src="./img/social-footer-telegram-v2.svg" alt=""></a>                
               </div>
           </div>
           <div class="col-5 col-sm-3 col-md-2">
