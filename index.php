@@ -382,7 +382,7 @@ include "config.php";
           </div>
           <div class="col-md-6 order-md-2 order-1 d-flex flex-wrap justify-content-center align-items-center">
             <p ><?php echo $kryptex_xlottery['pagina7_p1']?></p>
-            <p><?php echo $kryptex_xlottery['pagina7_p2']?></p>
+            <!-- <p><?php echo $kryptex_xlottery['pagina7_p2']?></p> -->
           </div>
         </div>
       </div>
